@@ -31,7 +31,7 @@ module Screenshot
         f.write res
       end
 
-      unless !scale
+      unless scale.nil?
         if scale != 1 and scale < 1 and scale > 0
           weight = FastImage.size(path)[0]
           FastImage.resize(path, weight*scale, 0, :outfile=>path)

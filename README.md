@@ -1,27 +1,32 @@
 # Cal::Screenshot::Resize
 
-
-
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your Gemfile:
 
-```ruby
-gem 'cal-screenshot-resize'
-```
+``` gem 'cal-screenshot-resize' ```
 
 And then execute:
-
-    $ bundle
-
+```
+ $ bundle
+```
 Or install it yourself as:
+```
+ $ gem install cal-screenshot-resize
+```
+## Usage 
 
-    $ gem install cal-screenshot-resize
+```
+require "screenshot/resize"
+```
 
-## Usage
-`require "screenshot/resize"`
 
-`Screenshot::Resize::screenshot_with_scale(:scale => 0.5)`
+```
+Screenshot::Resize::screenshot_with_scale(:scale => 0.5)
+```
+`:scale => 0.5` mean that screenshot will be 2 times smaller than original
+if you whant to use directly `screenshot_with_scale` add 
+`include Screenshot::Resize` to your code
 
 ## Contributing
 
